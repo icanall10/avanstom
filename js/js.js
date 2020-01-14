@@ -291,6 +291,8 @@
             .click(function () {
                 $('[data-services-dropdown]').toggleClass('open');
 
+                $(this).closest('li').children('ul').toggleClass('open');
+
                 return false;
             });
 

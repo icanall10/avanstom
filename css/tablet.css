@@ -78,7 +78,7 @@
     .header-block .menu {
         position: relative;
     }
-    .header-block .menu ul {
+    .header-block .menu-inner > ul {
         display: none;
 
         background: #008fd5;
@@ -267,6 +267,10 @@
     .works-page .item .img img {
         width: 100%;
         height: auto;
+    }
+
+    .header-block .menu li ul.open {
+        display: block !important;
     }
 
 }

@@ -452,6 +452,18 @@ html body > p.flash-message pre {
     color: #ffffff;
 }
 
+.header-block .menu li ul {
+    display: none !important;
+    padding-bottom: 8px;
+}
+.header-block .menu li ul li {
+    border: none;
+}
+.header-block .menu li ul li a {
+    text-transform: none;
+    padding-left: 38px;
+}
+
 .find-doctor-block {
     background: #4db1e2;
     padding: 3px 0;
