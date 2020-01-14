@@ -285,7 +285,28 @@
                 }
             });
 
+
+        $('[data-services-dropdown-link]')
+            .once()
+            .click(function () {
+                $('[data-services-dropdown]').toggleClass('open');
+
+                return false;
+            });
+
     }
+
+
+    $(document).click(function (event) {
+        let selector = '[data-services-dropdown]';
+
+        $target = $(event.target);
+
+        if (!$target.closest(selector).length &&
+            $(selector).is(":visible")) {
+            $(selector).removeClass('open');
+        }
+    });
 
 
     $(document).ready(function () {
