@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="js/colorbox/example2/colorbox.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/helpers.js"></script>
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/colorbox/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
+</head>
+<body>
+
+<div id="header">
+
+    <div class="header-block">
+        <div class="inner">
+            <div class="header">
+                <div class="container flex flex-middle">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contacts">
+                        <div class="phone">
+                            <a href="tel:74957084110">+7 (495) 708-41-10</a>
+                        </div>
+                        <div class="whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=79255858412">Whatsapp</a>
+                        </div>
+                    </div>
+                    <div class="address-work-time-callback">
+                        <div class="address item">Москва, ул. Электродная, д. 2, стр. 32</div>
+                        <div class="work-time item">ПН — ВС (без выходных) с 9:00 до 22:00</div>
+                        <div class="callback item">
+                            <a href="#">Заказать обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu-inner container">
+                    <ul class="flex flex-left">
+                        <li><a href="#">О клинике</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Для пациентов</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="title">НАВИГАЦИЯ</div>
+                    <div class="mobile-menu">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="find-doctor-block">
+        <div class="form">
+            <div class="inner container">
+                <form action="#">
+                    <div class="form-inner flex flex-left flex-middle">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Поиск по имени">
+                        </div>
+                        <div class="form-group">
+                            <select name="treatment">
+                                <option value="0">Направление</option>
+                                <option value="vrach-stomatolog-terapevt">Врач стоматолог - терапевт</option>
+                                <option value="vrach-stomatolog-obshhej-praktiki">
+                                    Врач стоматолог общей практики
+                                </option>
+                                <option value="vrach-stomatolog-hirurg-parodontolog">
+                                    Врач стоматолог-хирург-пародонтолог
+                                </option>
+                                <option value="vrach-stomatolog-ortoped">Врач стоматолог–ортопед</option>
+                                <option value="vrach-ortodont">Врач-ортодонт</option>
+                                <option value="gigienist-stomatologicheskij">Гигиенист стоматологический</option>
+                                <option value="glavnyj-vrach">Главный врач</option>
+                                <option value="implantolog">Имплантолог</option>
+                                <option value="ortoped">Ортопед</option>
+                                <option value="parodontolog">Пародонтолог</option>
+                                <option value="rentgenlaborant">Рентгенлаборант</option>
+                                <option value="stomatolog-terapevt">Стоматолог-терапевт</option>
+                                <option value="terapevt">Терапевт</option>
+                                <option value="hirurg">Хирург</option>
+                                <option value="chelyustno-litsevoj-hirurg">челюстно-лицевой хирург</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Поиск</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="toggle-wrapper">
+            <div class="inner container">
+                <a href="#" class="toggle">Найти врача</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="content">
+
+    <div data-ui-dialog="doctor-order-form"
+         data-ui-dialog-title="Запись на прием к Дюдин Алексей Николаевич"
+         data-ui-dialog-width="600"
+    >
+        <form action="#" class="review-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" placeholder="Ваш телефон">
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="Ваша электронная почта">
+            </div>
+            <div class="form-group">
+                <textarea name="text" rows="6" placeholder="Ваше сообщение, если необходимо"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="h1-and-breadcrumb">
+        <div class="container flex flex-middle">
+            <h1>АРХИВЫ: УСЛУГИ</h1>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper" class="container">
+        <div id="left">
+            <div class="left-menu-block">
+                <div class="title">Услуги</div>
+                <ul class="services_ul">
+                    <li>
+                        <a href="#">Консультация</a>
+                    </li>
+                    <li>
+                        <a href="#">Рентгенология</a>
+                    </li>
+                    <li>
+                        <a href="#">Гигиена и профилактика</a>
+                    </li>
+                    <li>
+                        <a href="#">Отбеливание зубов</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="center">
+            <div class="doctor-page page">
+
+               <div class="img-and-info clearfix">
+                   <div class="img">
+                       <img src="img/doctor2.jpg" alt="">
+                   </div>
+                   <div class="info">
+                       <div class="h2">Волкова Виктория Валерьевна</div>
+                       <div class="order">
+                           <a href="#" class="button button-white" data-ui-dialog-link="doctor-order-form">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
+                       </div>
+                       <div class="text">
+                           <div class="item">
+                               <p><b>Кандидат медицинских наук.</b></p>
+                               <p><b>Врач стоматолог-хирург-пародонтолог.</b></p>
+                               <p><b>Стаж с 2010 года.</b></p>
+                               <p><b>Член Европейской пародонтологической ассоциации.</b></p>
+                               <p><b>Член Российской пародонтологической ассоциации.</b></p>
+                               <p><b>2009-2010г. проходила стажировку в Великобритании на стоматологическом факультете университета г. Кардифф.</b></p>
+                               <p><b>Профессиональные навыки: </b></p>
+                               <p><b>Хирургическая&nbsp;стоматология</b><span style="font-weight: 400;">: удаление зубов, коррекция альвеолярного отростка, цистотомия, цистэктомия, резекция корня зуба;</span></p>
+                               <p><b>Парадонтология</b><span style="font-weight: 400;">: удаление зубных отложений, удлинение коронковой части зуба, закрытый и открытый кюретаж пародонтальных карманов, направленная регенерация костной ткани, забор аутотрансплантата с неба, пластика рецессий, френулопластика, вестибулопластика, обработка пародонтальных карманов с применением аппарата Vector, «лазерная пародонтология». </span></p>
+                               <p><b>Терапевтическая стоматология</b><span style="font-weight: 400;">: </span><span style="font-weight: 400;">профессиональная гигиена, эстетическое восстановление всех групп зубов, работа с коффердамом.</span></p>
+                               <p><b>Образование:</b></p>
+                               <p><b>2010 г.</b><span style="font-weight: 400;"> — диплом с отличием по специальности: «стоматология». Московский государственный медико-стоматологический университет им. А.И. Евдокимова;</span></p>
+                               <p><b>2011 г.</b><span style="font-weight: 400;"> — Интернатура по специальности: «Стоматология общей практики». Кафедра «Стоматологии общей практики и подготовки зубных техников» МГМСУ им. А.И. Евдокимова;</span></p>
+                               <p><b>2011-2013 г.</b><span style="font-weight: 400;"> – ординатура по специальности: «Стоматология терапевтическая». Кафедра «Госпитальной терапевтической стоматологии, пародонтологии и гериатрической стоматологии» в отделении заболеваний слизистой оболочки полости рта МГМСУ им. А.И. Евдокимова;</span></p>
+                               <p><b>2014 г.</b><span style="font-weight: 400;"> – первичная специализация по специальности: «Стоматология хирургическая». Кафедра «Челюстно-лицевой хирургии» МГМСУ им. А.И. Евдокимова.</span></p>
+                               <p><b>2013-2016 г.</b><span style="font-weight: 400;"> – аспирантура на кафедре «Пародонтологии» МГМСУ им. А.И. Евдокимова.</span></p>
+                               <p><b>2017 г.</b><span style="font-weight: 400;"> — защитила кандидатскую диссертацию на тему: «Влияние молекулярно-генетических факторов на процессы регенерации при ликвидации множественных рецессий с различными биотипами десны».</span></p>
+                               <p><b>2018 г.</b><span style="font-weight: 400;"> – повышение квалификации по специальности: «Стоматология терапевтическая». Кафедра «клинической стоматологи» МГМСУ им. А.И. Евдокимова.</span></p>
+                               <p><b>Курсы, семинары, конференции:</b></p>
+                               <p><b>2014 г.</b><span style="font-weight: 400;"> – участник симпозиума «Остеология» в Москве на тему: «Регенерация тканей в стоматологии: концепции настоящего и задачи будущего» Проф. Кристоф Хэммерле, Проф. Анатолий Кулаков.</span></p>
+                               <p><b>2014 г.</b><span style="font-weight: 400;"> – участник XXXVI итоговой конференции молодых ученых МГМСУ им. А.И. Евдокимова.</span></p>
+                               <p><b>2015 г.</b><span style="font-weight: 400;"> – участник и докладчик XXXVII итоговой конференции молодых ученых МГМСУ им. А.И. Евдокимова. Заняла I место с докладом по хирургической стоматологии.</span></p>
+                               <p><b>2015 г. </b><span style="font-weight: 400;">– участник и докладчик симпозиума «EuroPerio8» в Лондоне посвященного вопросам ликвидации рецессии в области зубов и имплантов &nbsp;</span><a href="https://www.google.ru/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=9&amp;ved=0ahUKEwiLi8iOuKrOAhVGdCwKHbWhCeQQFgg1MAg&amp;url=https%3A%2F%2Fwww.osteocom.me%2Fbio%2FVDPLFRt6awSMFcvg&amp;usg=AFQjCNFxgiXSSqlhJBo0SuMAtRO-nmycJw&amp;bvm=bv.128617741,d.bGs" rel="nofollow"><span style="font-weight: 400;">Prof. Giovanni Zucchelli</span></a><span style="font-weight: 400;">, Dr. Mariano Sanz, Dr. Francis Hughes.</span></p>
+                               <p><b>2016 г.</b><span style="font-weight: 400;"> – участник мастер-класса «Лазерная Стоматология. Преимущество применения диодного лазера в практике врача-стоматолога-хирурга, ортопеда, пародонтолога и терапевта».</span></p>
+                               <p><b>2016 г.</b><span style="font-weight: 400;"> – участник и докладчик симпозиума «Osteology Monaco» посвященный вопросам регенеративной хирургии Prof. Friedrich W. Neukam, Prof. Myron Nevins.</span></p>
+                               <p><b>2016 г.</b><span style="font-weight: 400;"> — семинар и мастер-класс «Изучение методик &nbsp;регенеративной хирургии твердых и мягких тканей в эстетически значимой зоне» Dr. Ueli Grunder, Dr. Otto Zuhr. </span></p>
+                               <p><b>2016 г. –</b><span style="font-weight: 400;"> семинар «Консервативная пародонтология» посвященный применению аппарата «Vector Paro» при лечении заболеваний пародонта.</span></p>
+                               <p><b>2017 г. –</b><span style="font-weight: 400;"> семинар и мастер-класс «Периохирургия как способ решения пост имплантационных проблем» А. Смоляковой.</span></p>
+                               <p><b>2017 г. –</b><span style="font-weight: 400;"> участник конгресса «Dentsply Sirona CНГ», симппозиума «Современные медоты лечения и диагностики на приеме стоматолога хирурга».</span></p>
+                               <p><b>2018 г.</b><span style="font-weight: 400;"> – участник и докладчик симпозиума «EuroPerio9» в Амстердаме посвященного вопросам костной аугментации, пластике мягких тканей в области зубов и имплантов Dr. Ueli Grunder, Dr. Otto Zuhr, </span><a href="https://www.google.ru/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=9&amp;ved=0ahUKEwiLi8iOuKrOAhVGdCwKHbWhCeQQFgg1MAg&amp;url=https%3A%2F%2Fwww.osteocom.me%2Fbio%2FVDPLFRt6awSMFcvg&amp;usg=AFQjCNFxgiXSSqlhJBo0SuMAtRO-nmycJw&amp;bvm=bv.128617741,d.bGs" rel="nofollow"><span style="font-weight: 400;">Prof. Giovanni Zucchelli</span></a><span style="font-weight: 400;">.</span></p>
+                               <p><b>Знание Английского языка</b><span style="font-weight: 400;"> – разговорный английский, перевод профлитературы, в 2010 г. получила сертификат по английскому языку на базе кафедры иностранных языков МГМСУ им. А.И. Евдокимова. </span></p>
+                               <p><b>Прием иностранных граждан.</b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+                <div class="certificates owl-wrapper">
+                    <div class="title-and-nav flex">
+                        <div class="h2">Дипломы и сертификаты:</div>
+                        <div class="owl-nav-custom">
+                            <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+                            <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <a href="img/cert1.jpg" class="colorbox" rel="doctor-certificates">
+                                    <img src="img/cert1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="img/cert1.jpg" class="colorbox" rel="doctor-certificates">
+                                    <img src="img/cert1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="img/cert1.jpg" class="colorbox" rel="doctor-certificates">
+                                    <img src="img/cert1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="img/cert1.jpg" class="colorbox" rel="doctor-certificates">
+                                    <img src="img/cert1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="img/cert1.jpg" class="colorbox" rel="doctor-certificates">
+                                    <img src="img/cert1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="img/cert1.jpg" class="colorbox" rel="doctor-certificates">
+                                    <img src="img/cert1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="footer">
+
+    <div class="footer-block">
+        <div class="inner container flex flex-nowrap">
+
+            <div class="col col-1">
+                <div class="frame"></div>
+                <div class="text">
+                    Стоматологический центр «Аванстом» работает на рынке стоматологических услуг уже более 15 лет. С
+                    1999 года, года основания стоматологической клиники мы стараемся соответствовать Вашим запросам и
+                    ожиданиям, что подтверждается достигнутыми результатами и обширно растущим списком постоянных
+                    благодарных пациентов.
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="title">ВКонтакте</div>
+                <!-- <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script> -->
+            </div>
+
+            <div class="col col-3">
+                <div class="frame">
+                    <a href="#" class="twitter">
+                        <i class="fa fa fa-twitter fa-3x"></i>
+                    </a>
+                </div>
+                <div class="title">Мы в социальных сетях</div>
+                <div class="social flex flex-left">
+                    <div class="item">
+                        <a href="https://www.facebook.com/avanstom1.ru/">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://twitter.com/avanstom1?lang=ru">
+                            <i class="fa fa-twitter-square"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://ok.ru/group/54917769789456">
+                            <i class="fa fa-comments"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.youtube.com/channel/UCtwBLYYUbz9Nkzc6nPdzCkg">
+                            <i class="fa fa-youtube-square"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.instagram.com/avanstom1.ru/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://vk.com/avanstom">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-4">
+                <div class="address">Москва, ул. Электродная, д. 2, стр. 32</div>
+                <div class="work-time">ПН — СБ с 9:00 до 22:00</div>
+                <div class="phone">+7 (495) 708-41-10</div>
+                <div class="callback">
+                    <a href="#">Заказать обратный звонок</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=79255858412">Whatsapp</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Написать руководству</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

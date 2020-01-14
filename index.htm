@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="js/colorbox/example2/colorbox.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/helpers.js"></script>
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/colorbox/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
+</head>
+<body class="is-home-page">
+
+<div id="header">
+
+    <div class="header-block">
+        <div class="inner">
+            <div class="header">
+                <div class="container flex flex-middle">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contacts">
+                        <div class="phone">
+                            <a href="tel:74957084110">+7 (495) 708-41-10</a>
+                        </div>
+                        <div class="whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=79255858412">Whatsapp</a>
+                        </div>
+                    </div>
+                    <div class="address-work-time-callback">
+                        <div class="address item">Москва, ул. Электродная, д. 2, стр. 32</div>
+                        <div class="work-time item">ПН — ВС (без выходных) с 9:00 до 22:00</div>
+                        <div class="callback item">
+                            <a href="#" data-ui-dialog-link="callback-form">Заказать обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu-inner container">
+                    <ul class="flex flex-left">
+                        <li><a href="#">О клинике</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Для пациентов</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="title">НАВИГАЦИЯ</div>
+                    <div class="mobile-menu">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="find-doctor-block">
+        <div class="form">
+            <div class="inner container">
+                <form action="#">
+                    <div class="form-inner flex flex-left flex-middle">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Поиск по имени">
+                        </div>
+                        <div class="form-group">
+                            <select name="treatment">
+                                <option value="0">Направление</option>
+                                <option value="vrach-stomatolog-terapevt">Врач стоматолог - терапевт</option>
+                                <option value="vrach-stomatolog-obshhej-praktiki">
+                                    Врач стоматолог общей практики
+                                </option>
+                                <option value="vrach-stomatolog-hirurg-parodontolog">
+                                    Врач стоматолог-хирург-пародонтолог
+                                </option>
+                                <option value="vrach-stomatolog-ortoped">Врач стоматолог–ортопед</option>
+                                <option value="vrach-ortodont">Врач-ортодонт</option>
+                                <option value="gigienist-stomatologicheskij">Гигиенист стоматологический</option>
+                                <option value="glavnyj-vrach">Главный врач</option>
+                                <option value="implantolog">Имплантолог</option>
+                                <option value="ortoped">Ортопед</option>
+                                <option value="parodontolog">Пародонтолог</option>
+                                <option value="rentgenlaborant">Рентгенлаборант</option>
+                                <option value="stomatolog-terapevt">Стоматолог-терапевт</option>
+                                <option value="terapevt">Терапевт</option>
+                                <option value="hirurg">Хирург</option>
+                                <option value="chelyustno-litsevoj-hirurg">челюстно-лицевой хирург</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Поиск</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="toggle-wrapper">
+            <div class="inner container">
+                <a href="#" class="toggle">Найти врача</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="content">
+
+    <div data-ui-dialog="callback-form"
+         data-ui-dialog-title="Заказать обратный звонок"
+         data-ui-dialog-width="450"
+    >
+        <form action="#" class="reviews-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" placeholder="Ваш телефон">
+            </div>
+            <div class="form-group">
+                <button type="submit">Закзать звонок</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="slider-block">
+        <div class="owl-carousel">
+            <div class="item flex flex-column">
+                <div class="img">
+                    <img src="img/slide2.png" alt="">
+                </div>
+
+                <div class="header-and-content">
+                    <div class="header">
+                        <div class="inner flex flex-nowrap flex-middle">
+                            <div class="title">Лечение кариеса</div>
+                            <div class="text">Микроинвазирование кариеса без препарирования флюороза, гипоплазии,
+                                методом icon!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="inner flex flex-nowrap">
+                            <div class="left">
+                                <div class="text">
+                                    <ul>
+                                        <li>Лечение кариеса без препарирования и нарушения целостности зуба</li>
+                                        <li>Нет необходимости в применении анестезиии</li>
+                                        <li>Возобновляется естественный цвет зубов</li>
+                                        <li>Эмаль становится прочной и устойчивок к воздействию агрессивных факторов
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="price">
+                                    <div class="percent">-70%</div>
+                                    <div class="value">615 руб</div>
+                                    <div class="old-value">2 000 руб</div>
+                                </div>
+                                <div class="more"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer flex">
+                    <div class="logo">
+                        <img src="img/slider-logo.png" alt="">
+                    </div>
+                    <div class="more">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item flex flex-column">
+                <div class="img">
+                    <img src="img/slide1.png" alt="">
+                </div>
+
+                <div class="header-and-content">
+                    <div class="header">
+                        <div class="inner flex flex-nowrap flex-middle">
+                            <div class="title">Обследование</div>
+                            <div class="text">Микроинвазирование кариеса без препарирования флюороза, гипоплазии,
+                                методом icon!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="inner flex flex-nowrap">
+                            <div class="left">
+                                <div class="text">
+                                    <ul>
+                                        <li>Лечение кариеса без препарирования и нарушения целостности зуба</li>
+                                        <li>Нет необходимости в применении анестезиии</li>
+                                        <li>Возобновляется естественный цвет зубов</li>
+                                        <li>Эмаль становится прочной и устойчивок к воздействию агрессивных факторов
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="price">
+                                    <div class="percent">-70%</div>
+                                    <div class="value">615 руб</div>
+                                    <div class="old-value">2 000 руб</div>
+                                </div>
+                                <div class="more"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="logo">
+                        <img src="img/slider-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="services-block">
+        <div class="items flex flex-center">
+            <div class="item item-1 flex">
+                <div class="inner flex flex-column">
+                    <div class="info">
+                        <div class="icon"></div>
+                        <div class="name">Лечение зубов</div>
+                        <div class="text">Пломбы, лечение кариеса и его осложнений, лечение корневых каналов.</div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-2 flex">
+                <div class="inner flex flex-column">
+                    <div class="info">
+                        <div class="icon"></div>
+                        <div class="name">Протезирование зубов</div>
+                        <div class="text">Несъемные, съемные, условно съемные протезы.</div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-3 flex">
+                <div class="inner flex flex-column">
+                    <div class="info">
+                        <div class="icon"></div>
+                        <div class="name">Имплантация зубов</div>
+                        <div class="text">Дентальная имплантация, сопутствующие операции.</div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-4 flex">
+                <div class="inner flex flex-column">
+                    <div class="info">
+                        <div class="icon"></div>
+                        <div class="name">Гигиена и профилактика</div>
+                        <div class="text">Снятие налета и зубных</div>
+                    </div>
+                    <div class="more">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="footer">
+
+    <div class="footer-block">
+        <div class="inner container flex flex-nowrap">
+
+            <div class="col col-1">
+                <div class="frame"></div>
+                <div class="text">
+                    Стоматологический центр «Аванстом» работает на рынке стоматологических услуг уже более 15 лет. С
+                    1999 года, года основания стоматологической клиники мы стараемся соответствовать Вашим запросам и
+                    ожиданиям, что подтверждается достигнутыми результатами и обширно растущим списком постоянных
+                    благодарных пациентов.
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="title">ВКонтакте</div>
+                <!-- <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script> -->
+            </div>
+
+            <div class="col col-3">
+                <div class="frame">
+                    <a href="#" class="twitter">
+                        <i class="fa fa fa-twitter fa-3x"></i>
+                    </a>
+                </div>
+                <div class="title">Мы в социальных сетях</div>
+                <div class="social flex flex-left">
+                    <div class="item">
+                        <a href="https://www.facebook.com/avanstom1.ru/">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://twitter.com/avanstom1?lang=ru">
+                            <i class="fa fa-twitter-square"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://ok.ru/group/54917769789456">
+                            <i class="fa fa-comments"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.youtube.com/channel/UCtwBLYYUbz9Nkzc6nPdzCkg">
+                            <i class="fa fa-youtube-square"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.instagram.com/avanstom1.ru/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://vk.com/avanstom">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-4">
+                <div class="address">Москва, ул. Электродная, д. 2, стр. 32</div>
+                <div class="work-time">ПН — СБ с 9:00 до 22:00</div>
+                <div class="phone">+7 (495) 708-41-10</div>
+                <div class="callback">
+                    <a href="#" data-ui-dialog-link="callback-form">Заказать обратный звонок</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=79255858412">Whatsapp</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Написать руководству</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
